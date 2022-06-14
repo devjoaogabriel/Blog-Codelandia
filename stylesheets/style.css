@@ -1,139 +1,176 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
-@font-face {
-    font-family: LexendDeca;
-    src: url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap);
+html {
+    /* A cada 1em será considerado 10px */
+    font-size: 62.5%;
 }
+html,
 body {
-    font-family: 'LexendDeca', sans-serif;
-    background-color: #F9F9F9;
+  height: 100vh;
+  font-family: 'LexendDeca', sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
-.navbar-top {
-    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
-    width: 100%;
+.heading {
+    display: flex;
+    padding: 10px;
     height: 250px;
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    justify-content: center;
+    align-items: center;
+    min-width: 414px;
 }
-.justify {
-    margin: 0px 15%;
+.flex-container {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    max-width: 940px;
     height: 100%;
-    /* min-width: 80%; */
 }
-.navbar-title {
-    position: relative;
-    padding: 20px;
+.container-internal {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.navbar-search {
-    position: relative;
-    margin-top: 60px;
-    padding: 20px;
+.box-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.title {
-    display: inline-block;
-    color: #FFFF;
+.content {
+    padding: 10px;
+    font-family: 'Lexend Deca';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.4rem;
     line-height: 30px;
-    position: relative;
-    margin-top: 5px;
+    color: #FFFFFF;
 }
-.right {
-    position: absolute;
-    text-align: right;
-    right: 10px;
-}
-.left {
-    position: absolute;
-    text-align: left;
-    left: 10px;
-}
-.input-space {
-    width: 100%;
-    height: 43px;
-    outline: none;
-    border: none;
-    background: rgba(255, 255, 255, 0.2) url(../assets/search.png) no-repeat 10px center;
-    /* background-color: rgba(255, 255, 255, 0.2);
-    background-image: url(../assets/search.png);
-    background-repeat: no-repeat;
-    background-position: 10px; */
-    padding-left: 15px;
+.box-search {
+    height: 4rem;
+    padding: 10px;
     border-radius: 5px;
-    color: #FFFF;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+    background: rgba(255, 255, 255, 0.2) url(../assets/Untitled.png) no-repeat 10px center;
+    transition: ease-in 300ms;
 }
-#ip-sc {
-    margin-left: 30px;
-    outline: none;
+.box-search:hover {
+    box-shadow: 2px 2px 5px rgba(143, 143, 143, 0.314);
+}
+#search-id {
+    width: 90%;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 22px;
+    color: #FFFF;
     border: none;
     background-color: rgba(255, 255, 255, 0);
-    height: 100%;
-    width: 100%;
-    color: #FFFF;
+    margin-left: 25px;
 }
-input::placeholder {
-    color: #FFFF;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+#search-id::placeholder {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
     line-height: 22px;
-    font-style: normal;
+    color: #FFFF;
     opacity: 0.5;
-    text-decoration: none;
 }
-
-.box-text {
-    display: inline-block;
-    width: 98%;
-    padding: 15px;
-    /* height: 200px; */
-    margin: 10px 0px;
-    border-radius: 5px;
-    background-color: #FFFF;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3F5F7;
+    padding: 10px;
+    min-width: 414px;
+}
+.grid {
+    display: grid;
+    gap: 50px;
+    padding: 10px;
+    width: 100%;
+    max-width: 940px;
+    height: 100%;
+    margin-top: 40px;
+}
+.grid-container {
+    min-width: 374px;
+    max-width: 900px;
+    max-height: auto;
+    background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
-    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    transition: ease-in 300ms;
 }
-.date-space {
-    margin: 10px;
+.grid-container:hover {
+    box-shadow: 2px 2px 5px rgba(119, 119, 119, 0.314);
 }
-.emoticon {
-    position: absolute;
-    right: 20px;
-    top: 17px;
-    /* color: #574AE8; */
+.grid-container > header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
-datagrid {
+.header-content > p {
+    font-family: 'Lexend Deca';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 1.6rem;
     line-height: 20px;
     color: #717171;
 }
-.title-section {
-    margin: 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 32px;
+.content-article {
+    padding: 10px;
 }
-.informn {
-    margin: 0px 15px;
-    font-size: 18px;
-    font-weight: 400;
+.content-article > h2 {
+    font-family: 'Lexend Deca';
     font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 32px;
+    color: #1A202C;
+    margin-bottom: 5px;
+}
+.content-article > p {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
     line-height: 32px;
     color: #717171;
+    text-align: left;
 }
-
-@media (max-width: 500px) {
-    .justify {
-        margin: 0 10%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+.header-content img {
+    transition: ease-in 300ms;
+}
+.header-content img:hover {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px rgb(126, 118, 221));
+}
+@media (max-width: 768px) {
+    .grid {
+        margin-top: 20px;
+    }
+    .header-content > p {
+        font-size: 1.4rem;
+        line-height: 18px;
+    }
+    .content-article > p {
+        font-size: 1.4rem;
+        line-height: 26px;
+    }
+    .content-article > h2 {
+        font-size: 1.8rem;
+        line-height: 22px;
+        margin-bottom: 3px;
     }
 }

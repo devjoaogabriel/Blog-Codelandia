@@ -4,78 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons8-circled-b-24.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/apps.svg" type="image/x-icon">
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="./stylesheets/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap" rel="stylesheet">
-    <title>Codelândia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Blog Codelândia</title>
 </head>
 <body>
-    <main>
-    <div class="navbar-top">
-        <div class="justify">
-            <div class="navbar-title">
-                <h2 class="title left">Codelândia</h2>
-                <h2 class="title right">blog</h2>
-            </div>
-    
-            <div class="navbar-search">
-                <div class="input-space">
-                    <input type="search" name="search" id="ip-sc" placeholder="Pesquisar no blog">
+    <header class="heading">
+        <div class="flex-container">
+            <div class="container-internal">
+                <div class="box-text">
+                    <div class="content">
+                       <h2>Codelândia</h2> 
+                    </div>
+                    <div class="content">
+                        <h2>blog</h2>
+                    </div>
+                </div>
+                <div class="box-search">
+                    <label for="search-id"></label>
+                    <input type="text" name="search" id="search-id" placeholder="Pesquisar no blog">
                 </div>
             </div>
         </div>
-    </div>
-        <section class="justify">
-            <div class="box-text">
-                <div class="date-space">
-                    <datagrid>17 de mai, 2022</datagrid>
-                    <a href="#">
-                        <img src="./assets/heart.png" alt="Love Emoji" class="emoticon">
-                    </a>
-                </div>
-                <h1 class="title-section">Agora é oficial, Windows 11 está vindo</h1>
-                <p class="informn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.
-                </p>
-            </div>
-            <div class="box-text">
-                <div class="date-space">
-                    <datagrid>17 de mai, 2022</datagrid>
-                    <a href="#">
-                        <img src="./assets/heart.png" alt="Love Emoji" class="emoticon">
-                    </a>
-                </div>
-                <h1 class="title-section">Tim Berners-Lee vai leiloar o código fonte da web</h1>
-                <p class="informn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus libero, id efficitur arcu viverra ac. Etiam sed sagittis velit, vitae convallis turpis. Praesent in purus non tellus tincidunt fermentum eu at sem. Curabitur lacus libero.
-                </p>
-            </div>
-            <div class="box-text">
-                <div class="date-space">
-                    <datagrid>17 de mai, 2022</datagrid>
-                    <a href="#">
-                        <img src="./assets/heart.png" alt="Love Emoji" class="emoticon">
-                    </a>
-                </div>
-                <h1 class="title-section">Tem Firefox novo no pedaço e você vai querer migrar</h1>
-                <p class="informn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.
-                </p>
-            </div>
-            <div class="box-text">
-                <div class="date-space">
-                    <datagrid>17 de mai, 2022</datagrid>
-                    <a href="#">
-                        <img src="./assets/heart.png" alt="Love Emoji" class="emoticon">
-                    </a>
-                </div>
-                <h1 class="title-section">John McAfee, criador do antivírus McAfee, morre</h1>
-                <p class="informn">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus libero, id efficitur arcu viverra ac. Etiam sed sagittis velit, vitae convallis turpis. Praesent in purus non tellus tincidunt fermentum eu at sem. Curabitur lacus libero
-                </p>
-            </div>
+    </header>
+    <main>
+        <section class="grid">
+            <article class="grid-container">
+                <header>
+                    <div class="header-content">
+                        <p>06 de jun, 2022</p>
+                    </div>
+                    <div class="header-content">
+                        <img src="./assets/heart.png" alt="Like Icon">
+                    </div>
+                </header>
+                <section class="content-article">
+                    <h2>Agora é oficial: o Windows 11 está vindo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+                </section>
+            </article>
+            <article class="grid-container">
+                <header>
+                    <div class="header-content">
+                        <p>09 de fev, 2022</p>
+                    </div>
+                    <div class="header-content">
+                        <img src="./assets/heart.png" alt="Like Icon">
+                    </div>
+                </header>
+                <section class="content-article">
+                    <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+                </section>
+            </article>
+            <article class="grid-container">
+                <header>
+                    <div class="header-content">
+                        <p>15 de mai, 2022</p>
+                    </div>
+                    <div class="header-content">
+                        <img src="./assets/heart.png" alt="Like Icon">
+                    </div>
+                </header>
+                <section class="content-article">
+                    <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
+                </section>
+            </article>
+            <article class="grid-container">
+                <header>
+                    <div class="header-content">
+                        <p>09 de jun, 2022</p>
+                    </div>
+                    <div class="header-content">
+                        <img src="./assets/heart.png" alt="Like Icon">
+                    </div>
+                </header>
+                <section class="content-article">
+                    <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+                </section>
+            </article>
         </section>
     </main>
 </body>
