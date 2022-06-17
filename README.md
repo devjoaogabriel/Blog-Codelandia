@@ -6,7 +6,7 @@
 
 <img src="./BlogCodelândia-2.png"/>
 
-<h4 align="center"><a href="https://devjoaogabriel.github.io/Blog-Codelandia/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://devjoaogabriel.github.io/blog-codelandia/">Clique para visitar o projeto</a></h4>
 
 ---
 
