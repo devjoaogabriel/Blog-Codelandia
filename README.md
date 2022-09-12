@@ -1,5 +1,5 @@
 <h1 align="center">
-  💻<br>Blog Codelândia
+  💻<br>BlogCodelândia
 </h1>
 
 ---
